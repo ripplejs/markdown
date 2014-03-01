@@ -1,6 +1,9 @@
 
 # markdown-filter
 
+[![Build Status](https://travis-ci.org/ripplejs/markdown-filter.png?branch=master)](https://travis-ci.org/ripplejs/markdown-filter)
+
+
   Markdown filter that uses Marked
 
 ## Installation
