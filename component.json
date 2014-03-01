@@ -1,0 +1,20 @@
+{
+  "name": "markdown-filter",
+  "repo": "",
+  "description": "Markdown filter that uses Marked",
+  "version": "0.0.1",
+  "keywords": [],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "dependencies": {
+    "chjj/marked": "*"
+  },
+  "development": {
+    "component/assert": "*",
+    "ripplejs/ripple": "0.0.5",
+    "wilsonpage/fastdom": "v0.8.4"
+  },
+  "scripts": [
+    "lib/index.js"
+  ]
+}
