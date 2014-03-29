@@ -6,31 +6,31 @@ var dom = require('fastdom');
 describe('markdown-filter', function(){
 
   it('should replace markdown', function(done){
-    var View = ripple('<div>{{content | markdown}}</div>')
+    var View = ripple('<div markdown="{{content}}"></div>')
       .use(markdown);
 
     var view = new View({
-      content: 'hi'
+      data: { content: 'hi' }
     });
 
     dom.defer(function(){
-      assert(view.el.firstChild.innerHTML.trim() === "<p>hi</p>");
+      assert(view.el.innerHTML.trim() === "<p>hi</p>");
       done();
     });
   });
 
   it('should update', function (done) {
-    var View = ripple('<div>{{content | markdown}}</div>')
+    var View = ripple('<div markdown="{{content}}"></div>')
       .use(markdown);
 
     var view = new View({
-      content: 'hi'
+      data: { content: 'hi' }
     });
 
     view.set('content', '* hi');
 
     dom.defer(function(){
-      assert(view.el.firstChild.firstChild.innerHTML.trim() === "<li>hi</li>");
+      assert(view.el.firstChild.innerHTML.trim() === "<li>hi</li>");
       done();
     });
   });

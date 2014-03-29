@@ -11,7 +11,7 @@
   },
   "development": {
     "component/assert": "*",
-    "ripplejs/ripple": "0.0.5",
+    "ripplejs/ripple": "0.2.0",
     "wilsonpage/fastdom": "v0.8.4"
   },
   "scripts": [
