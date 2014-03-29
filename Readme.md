@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/ripplejs/markdown-filter.png?branch=master)](https://travis-ci.org/ripplejs/markdown-filter)
 
 
-  Markdown filter that uses Marked
+  Markdown directive that uses Marked
 
 ## Installation
 
@@ -18,7 +18,7 @@
 var ripple = require('ripple');
 var markdown = require('markdown-filter');
 
-var View = ripple('<div>{{content | markdown}}</div>')
+var View = ripple('<div markdown="{{content}}"></div>')
   .use(markdown);
 ```
 
