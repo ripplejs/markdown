@@ -1,7 +1,7 @@
 {
-  "name": "markdown-filter",
+  "name": "markdown",
   "repo": "",
-  "description": "Markdown filter that uses Marked",
+  "description": "Markdown directive that uses Marked",
   "version": "0.0.1",
   "keywords": [],
   "license": "MIT",

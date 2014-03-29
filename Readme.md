@@ -1,7 +1,7 @@
 
-# markdown-filter
+# markdown
 
-[![Build Status](https://travis-ci.org/ripplejs/markdown-filter.png?branch=master)](https://travis-ci.org/ripplejs/markdown-filter)
+[![Build Status](https://travis-ci.org/ripplejs/markdown.png?branch=master)](https://travis-ci.org/ripplejs/markdown)
 
 
   Markdown directive that uses Marked
@@ -10,13 +10,13 @@
 
   Install with [component(1)](http://component.io):
 
-    $ component install ripplejs/markdown-filter
+    $ component install ripplejs/markdown
 
 ## API
 
 ```js
 var ripple = require('ripple');
-var markdown = require('markdown-filter');
+var markdown = require('markdown');
 
 var View = ripple('<div markdown="{{content}}"></div>')
   .use(markdown);
