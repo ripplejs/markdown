@@ -1,5 +1,5 @@
 var assert = require('assert');
-var markdown = require('markdown-filter');
+var markdown = require('markdown');
 var ripple = require('ripple');
 var dom = require('fastdom');
 
